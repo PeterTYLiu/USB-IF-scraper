@@ -1,0 +1,28 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "sqlite"
+    url      = env("DATABASE_URL")
+}
+
+model Device {
+    tid                          String   @id
+    createdAt                    DateTime @default(now())
+    updatedAt                    DateTime @updatedAt
+    companyName                  String
+    modelPartNumber              String
+    name                         String
+    productRevision              String?
+    id                           String?
+    usbSpecSupport               String?
+    totalWattageFromPorts        Int?
+    apdo                         String?
+    usbTypeCRole                 String?
+    eMarkerTid                   String?
+    usbConnector                 String?
+}

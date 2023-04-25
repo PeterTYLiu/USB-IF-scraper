@@ -1,0 +1,29 @@
+.main {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, #2e026d, #15162c);
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 4rem 1rem;
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+.table td,
+.table th {
+  border: 1px solid white;
+  padding: 8px 6px;
+}
